@@ -158,9 +158,9 @@ class Session:
             if not verbose:
                 raise ImportError
             from tqdm import tqdm
-            generator = tqdm(range(*args, **kwargs))
+            generator = tqdm(range(*args))
         except ImportError:
-            generator = range(*args, **kwargs)
+            generator = range(*args)
 
         # yield available snapshots
         for number in generator:

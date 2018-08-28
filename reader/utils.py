@@ -4,7 +4,7 @@ from bson import loads
 
 
 def read_pic(path, **kwargs):
-    return imread(path, **kwargs)
+    return imread(path, -1, **kwargs)
 
 
 def read_txt(path):
